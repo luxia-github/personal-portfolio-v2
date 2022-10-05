@@ -7,23 +7,22 @@ const navigation = [
 
 export default function About() {
   return (
-    <div
-      className="relative overflow-hidden bg-background-dark-2 text-text-1"
-      id="about"
-    >
-      <div className="relative pt-6 pb-16 sm:pb-24">
-        <main className="mx-auto mt-16 max-w-7xl px-4 sm:mt-24">
+    <div className="relative overflow-hidden text-text-1 pb-24" id="about">
+      <div className="relative pt-6">
+        <main className="mx-auto mt-10 max-w-7xl px-4 sm:mt-24">
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
+            <h1 className="text-4xl font-bold tracking-tight text-text-1 sm:text-5xl md:text-6xl">
               <span className="block text-highlight-1 xl:inline">
                 Hi I'm Lu
               </span>{" "}
               <span className="block xl:inline">I create for the web</span>
             </h1>
             <p className="mx-auto mt-3 max-w-md text-base text-text-2 sm:text-lg md:mt-5 md:max-w-3xl md:text-xl">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-              lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-              fugiat aliqua.
+              I’m a developer, designer and illustrator. I'm currently looking
+              for a junior frontend developer position. My next big goal is to
+              expand my skill set and become a full-stack developer.👩‍💻 In my
+              spare time, I love doing digital illustrations and hang out with
+              friends.
             </p>
             <div className="mx-auto mt-5 max-w-md sm:flex sm:justify-center md:mt-8">
               <div className="rounded-md shadow">

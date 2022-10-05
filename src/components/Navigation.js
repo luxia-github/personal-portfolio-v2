@@ -9,12 +9,12 @@ function classNames(...classes) {
 
 export default function Navigation() {
   return (
-    <Disclosure as="nav" className="bg-background-dark-2 text-text-1 shadow">
+    <Disclosure as="nav" className="bg-stroke text-text-1 pt-5">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="flex h-16 justify-between">
-              <div className="flex">
+              <div className="flex items-center">
                 <div className="-ml-2 mr-2 flex items-center md:hidden">
                   {/* Mobile menu button */}
                   <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none">
@@ -26,30 +26,36 @@ export default function Navigation() {
                     )}
                   </Disclosure.Button>
                 </div>
-                <div className="flex flex-shrink-0 items-center"></div>
+
+                {/* avatar */}
+                <div className="relative inline-block h-10 w-10 overflow-hidden rounded-full outline outline-2 outline-text-1">
+                  <div className="bg-highlight-1/10 w-full h-full absolute inset-0" />
+                  <img src="./assets/avatar-small.jpg" alt="avatar" />
+                </div>
+
                 <div className="hidden md:ml-6 md:flex md:space-x-8">
                   {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
                   <a
                     href="#about"
-                    className=" hover:text-highlight-1 inline-flex items-center border-b-2 border-background-dark-2 hover:border-current px-1 pt-1 text-sm font-medium transition ease-in-out duration-500"
+                    className=" hover:text-highlight-1 inline-flex items-center border-b-2 border-transparent hover:border-current px-1 pt-1 text-sm font-medium transition ease-in-out duration-500"
                   >
                     About
                   </a>
                   <a
                     href="#projects"
-                    className=" hover:text-highlight-1 inline-flex items-center border-b-2 border-background-dark-2 hover:border-current px-1 pt-1 text-sm font-medium transition ease-in-out duration-500"
+                    className=" hover:text-highlight-1 inline-flex items-center border-b-2 border-transparent hover:border-current px-1 pt-1 text-sm font-medium transition ease-in-out duration-500"
                   >
                     Projects
                   </a>
                   <a
                     href="#skills"
-                    className=" hover:text-highlight-1 inline-flex items-center border-b-2 border-background-dark-2 hover:border-current px-1 pt-1 text-sm font-medium transition ease-in-out duration-500"
+                    className=" hover:text-highlight-1 inline-flex items-center border-b-2 border-transparent hover:border-current px-1 pt-1 text-sm font-medium transition ease-in-out duration-500"
                   >
                     Skills
                   </a>
                   <a
                     href="#contact"
-                    className=" hover:text-highlight-1 inline-flex items-center border-b-2 border-background-dark-2 hover:border-current px-1 pt-1 text-sm font-medium transition ease-in-out duration-500"
+                    className=" hover:text-highlight-1 inline-flex items-center border-b-2 border-transparent hover:border-current px-1 pt-1 text-sm font-medium transition ease-in-out duration-500"
                   >
                     Contact
                   </a>
@@ -60,10 +66,16 @@ export default function Navigation() {
                   href="mailto:lxia.daily@gmail.com"
                   className="relative inline-flex items-center rounded-md bg-highlight-1 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-highlight-1 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition ease-in-out duration-500"
                 >
-                  <FaceSmileIcon
+                  <span
                     className="-ml-1 mr-2 h-5 w-5 animate-spin"
                     aria-hidden="true"
-                  />
+                  >
+                    😃
+                  </span>
+                  {/* <FaceSmileIcon
+                    className="-ml-1 mr-2 h-5 w-5 animate-spin"
+                    aria-hidden="true"
+                  /> */}
                   <span>Get in touch</span>
                 </a>
               </div>

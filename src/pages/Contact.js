@@ -191,43 +191,63 @@ const footerNavigation = {
 
 export default function Example() {
   return (
-    <div
-      className="relative bg-background-dark-1 text-text-1 px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pt-24 lg:pb-28 "
-      id="contact"
-    >
-      <div className="relative mx-auto max-w-7xl ">
-        <div className="text-center mb-10">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Get in touch
-          </h2>
-          <p className="mx-auto mt-3 max-w-2xl text-xl text-text-2 sm:mt-4">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa
-            libero labore natus atque, ducimus sed.
-          </p>
-        </div>
-        <div className="flex justify-center">
-          <a
-            href="mailto:lxia.daily@gmail.com"
-            className="flex items-center justify-center rounded-md bg-highlight-1 px-5 py-3 text-base font-medium text-text-1 hover:scale-105 transition ease-in-out duration-500"
-          >
-            <span className="mr-5">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
-                />
-              </svg>
-            </span>
-            Click to email
-          </a>
+    <div>
+      {/* divier */}
+      <div>
+        <svg
+          id="visual"
+          viewBox="0 0 960 50"
+          // width="960"
+          // height="50"
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+        >
+          <path
+            d="M0 1L53.3 2.2C106.7 3.3 213.3 5.7 320 13C426.7 20.3 533.3 32.7 640 39.2C746.7 45.7 853.3 46.3 906.7 46.7L960 47L960 51L906.7 51C853.3 51 746.7 51 640 51C533.3 51 426.7 51 320 51C213.3 51 106.7 51 53.3 51L0 51Z"
+            fill="#242629"
+            stroke-linecap="round"
+            stroke-linejoin="miter"
+          ></path>
+        </svg>
+      </div>
+      <div
+        className="relative bg-background-dark-1 text-text-1 px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pt-24 lg:pb-28 "
+        id="contact"
+      >
+        <div className="relative mx-auto max-w-7xl ">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-bold tracking-tight text-text-1 sm:text-4xl">
+              Get in touch
+            </h2>
+            <p className="mx-auto mt-3 max-w-2xl text-xl text-text-2 sm:mt-4">
+              I'm currently looking for a junior frontend developer position in
+              the United Sates. Please hit me up and let's talk!
+            </p>
+          </div>
+          <div className="flex justify-center">
+            <a
+              href="mailto:lxia.daily@gmail.com"
+              className="flex items-center justify-center rounded-md bg-highlight-1 px-5 py-3 text-base font-medium text-text-1 hover:scale-105 transition ease-in-out duration-500"
+            >
+              <span className="mr-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                  />
+                </svg>
+              </span>
+              Click to email
+            </a>
+          </div>
         </div>
       </div>
     </div>
