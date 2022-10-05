@@ -19,9 +19,9 @@ export default function About() {
             </h1>
             <p className="mx-auto mt-3 max-w-md text-base text-text-2 sm:text-lg md:mt-5 md:max-w-3xl md:text-xl">
               I’m a developer, designer and illustrator. I'm currently looking
-              for a junior frontend developer position. My next big goal is to
-              expand my skill set and become a full-stack developer.👩‍💻 In my
-              spare time, I love doing digital illustrations and hang out with
+              for a frontend developer position. My next big goal is to expand
+              my skill set and become a full-stack developer.👩‍💻 In my spare
+              time, I love doing digital illustrations and hang out with
               friends.
             </p>
             <div className="mx-auto mt-5 max-w-md sm:flex sm:justify-center md:mt-8">

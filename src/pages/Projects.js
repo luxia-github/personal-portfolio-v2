@@ -1,11 +1,3 @@
-import {
-  CodeBracketIcon,
-  WrenchIcon,
-  NewspaperIcon,
-  SwatchIcon,
-  ListBulletIcon,
-} from "@heroicons/react/24/outline";
-
 const webAppProjects = [
   {
     title: "Dojo",
@@ -164,7 +156,7 @@ export default function Projects() {
                   key={post.title}
                   className="flex flex-col overflow-hidden rounded-lg shadow-lg bg-background-dark-2"
                 >
-                  <a href={post.href} className="block">
+                  <a href={post.href} target="_blank" className="block">
                     <div className="flex-shrink-0 relative origin-top hover:scale-105 transition ease-in-out duration-500">
                       {/* <div className="bg-highlight-1/50 hover:bg-highlight-1/0 w-full h-full absolute inset-0 backdrop-grayscale hover:backdrop-filter-none transition ease-in-out duration-500" /> */}
                       <img
@@ -180,7 +172,11 @@ export default function Projects() {
                       <p className="text-sm font-medium text-highlight-2">
                         {post.category.name}
                       </p>
-                      <a href={post.href} className="mt-2 block">
+                      <a
+                        href={post.href}
+                        target="_blank"
+                        className="mt-2 block"
+                      >
                         <p className="text-xl font-semibold">{post.title}</p>
                         <p className="mt-3 text-base text-text-2">
                           {post.description}
@@ -217,20 +213,26 @@ export default function Projects() {
                   key={post.title}
                   className="flex flex-col overflow-hidden rounded-lg shadow-lg bg-background-dark-2"
                 >
-                  <div className="flex-shrink-0 relative origin-top hover:scale-105 transition ease-in-out duration-500">
-                    {/* <div className="bg-highlight-1/50 hover:bg-highlight-1/0 w-full h-full absolute inset-0 backdrop-grayscale hover:backdrop-filter-none transition ease-in-out duration-500" /> */}
-                    <img
-                      className="h-48 w-full object-cover object-top"
-                      src={post.imageUrl}
-                      alt=""
-                    />
-                  </div>
+                  <a href={post.href} target="_blank" className="block">
+                    <div className="flex-shrink-0 relative origin-top hover:scale-105 transition ease-in-out duration-500">
+                      {/* <div className="bg-highlight-1/50 hover:bg-highlight-1/0 w-full h-full absolute inset-0 backdrop-grayscale hover:backdrop-filter-none transition ease-in-out duration-500" /> */}
+                      <img
+                        className="h-48 w-full object-cover object-top"
+                        src={post.imageUrl}
+                        alt=""
+                      />
+                    </div>
+                  </a>
                   <div className="flex flex-1 flex-col justify-between bg-stroke p-6">
                     <div className="flex-1">
                       <p className="text-sm font-medium text-highlight-2">
                         {post.category.name}
                       </p>
-                      <a href={post.href} className="mt-2 block">
+                      <a
+                        href={post.href}
+                        target="_blank"
+                        className="mt-2 block"
+                      >
                         <p className="text-xl font-semibold">{post.title}</p>
                         <p className="mt-3 text-base text-text-2">
                           {post.description}
@@ -266,20 +268,26 @@ export default function Projects() {
                   key={post.title}
                   className="flex flex-col overflow-hidden rounded-lg shadow-lg bg-background-dark-2"
                 >
-                  <div className="flex-shrink-0 relativ">
-                    {/* <div className="bg-highlight-1/50 hover:bg-highlight-1/0 w-full h-full absolute inset-0 backdrop-grayscale hover:backdrop-filter-none transition ease-in-out duration-500" /> */}
-                    <img
-                      className="h-48 w-full object-cover object-top hover:scale-105 transition ease-in-out duration-500"
-                      src={post.imageUrl}
-                      alt=""
-                    />
-                  </div>
+                  <a href={post.href} target="_blank" className="block">
+                    <div className="flex-shrink-0 relativ">
+                      {/* <div className="bg-highlight-1/50 hover:bg-highlight-1/0 w-full h-full absolute inset-0 backdrop-grayscale hover:backdrop-filter-none transition ease-in-out duration-500" /> */}
+                      <img
+                        className="h-48 w-full object-cover object-top hover:scale-105 transition ease-in-out duration-500"
+                        src={post.imageUrl}
+                        alt=""
+                      />
+                    </div>
+                  </a>
                   <div className="flex flex-1 flex-col justify-between bg-stroke p-6">
                     <div className="flex-1">
                       <p className="text-sm font-medium text-highlight-2">
                         {post.category.name}
                       </p>
-                      <a href={post.href} className="mt-2 block">
+                      <a
+                        href={post.href}
+                        target="_blank"
+                        className="mt-2 block"
+                      >
                         <p className="text-xl font-semibold">{post.title}</p>
                         <p className="mt-3 text-base text-text-2">
                           {post.description}
